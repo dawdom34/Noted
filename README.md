@@ -20,19 +20,22 @@ A simple todo app made in django
 ```bash
 python -m venv "name"
 ```
-Change the "name" to whatever you want (eg. ToDoApp)
+  Change the "name" to whatever you want (eg. ToDoApp)
 
 3. You need to activate your virtual enviroment, to do this go to created directory and execute command below:
 ```bash
 Scripts\activate
 ```
-4. Create new directory named "src", and use git clone to put this repository inside this file.
-5. 
-6. Go to Noted repository and execute this command:
+4. To get this repository, run the following command inside your git enabled terminal:
+```bash
+git clone https://github.com/dawdom34/Noted.git
+```
+ 
+5. Go to Noted repository and execute this command:
 ```bash
 pip install -r requirements.txt
 ```
-This command will install all necessary packages (including django) to start the project in an isolated environment
+  This command will install all necessary packages (including django) to start the project in an isolated environment
 
 6. Create all the migrations file (database migrations) required to run this App by running the fallowing command inside src directory:
 ```bash
@@ -49,8 +52,8 @@ python manage.py migrate
 python manage.py createsuperuser
 ```
 
-10. Now let's make the App live. We just need to start the server now and then we can start using our simple todo App. Start the server by following command:
+9. Now let's make the App live. We just need to start the server now and then we can start using our simple todo App. Start the server by following command:
 ```bash
 python manage.py runserver
 ```
-Once the server is hosted, head over to http://127.0.0.1:8000/
+  Once the server is hosted, head over to http://127.0.0.1:8000/
