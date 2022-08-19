@@ -14,11 +14,16 @@ A simple todo app made in django
 ![screen6](https://user-images.githubusercontent.com/79845962/185420092-899a096f-ed59-47b7-97bd-f0a1d690688e.png)
 
 ## Setup (Windows)
+0. Install virtual enviroment.
+```bash
+pip install virtualenv
+```
+
 1. Open cmd and change your directory to Desktop ("cd Desktop").
 
 2. Now it's time to create your virtual enviroment using this command:
 ```bash
-python -m venv "name"
+virtualenv "name"
 ```
 - Change the "name" to whatever you want (eg. ToDoApp)
 
@@ -37,9 +42,9 @@ pip install -r requirements.txt
 ```
 - This command will install all necessary packages (including django) to start the project in an isolated environment
 
-6. Create all the migrations file (database migrations) required to run this App by running the fallowing command inside src directory:
+6. Create all the migrations file (database migrations) required to run this App by running the fallowing command inside Noted directory:
 ```bash
-python manage.py makemigrations
+python manage.py makemigrations todolist
 ```
 
 7. Now, to apply this migrations run the following command:
